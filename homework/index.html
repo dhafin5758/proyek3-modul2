@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homework - Interactive Profile Card</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="kartu-profil" id="kartu-profil">
+      <p id="status" role="status" aria-live="polite" data-state="idle">
+        Memuat profil...
+      </p>
+
+      <div id="profil-inti" hidden>
+        <h1 id="profil-nama"></h1>
+        <p id="profil-peran"></p>
+
+        <button id="toggle-detail" type="button"
+                aria-expanded="false" aria-controls="profil-detail">
+          Lihat detail
+        </button>
+        <button id="toggle-tema" type="button">
+          Ganti tema
+        </button>
+
+        <div id="profil-detail" class="detail">
+          <p id="profil-bio"></p>
+
+          <h2>Keterampilan</h2>
+          <ul id="daftar-keterampilan"></ul>
+
+          <form id="form-keterampilan">
+            <label for="keterampilan-baru">Tambah keterampilan</label>
+            <input id="keterampilan-baru" name="keterampilan-baru"
+                   aria-describedby="error-keterampilan">
+            <small id="error-keterampilan" class="error"></small>
+            <button type="submit">Tambah</button>
+          </form>
+        </div>
+      </div>
+
+      <button id="coba-lagi" type="button" hidden>Coba lagi</button>
+    </section>
+  </main>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
