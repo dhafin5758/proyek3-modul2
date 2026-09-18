@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTF101  Mulai CTF Pertamamu Tanpa Nyasar</title>
+  <meta name="description" content="Program dasar untuk mahasiswa yang mau breakthrough ke dunia Capture The Flag, dari nol sampai flag pertama.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#konten-utama">CTF101</a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-utama">
+        <span class="sr-only">Buka menu navigasi</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+
+      <nav id="nav-utama" class="nav-utama" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#materi">Materi</a></li>
+          <li><a class="nav-link" href="#jadwal">Jadwal</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#daftar">Daftar</a></li>
+          <li><button type="button" class="tema-toggle">dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-title">Ayo belajar Cybersecurity via CTF!</h1>
+          <p class="lead">
+            CTF101 adalah program dasar untuk mahasiswa yang penasaran sama dunia Cybersecurity melalui
+            Capture The Flag.
+          </p>
+          <p><a class="button button--primary" href="#daftar">Gabung Batch Berikutnya</a></p>
+        </div>
+        <img class="hero-media" src="assets/exiftool.png"
+             alt="Tampilan minal exiftool"
+             width="1200" height="800">
+      </div>
+    </section>
+
+    <section id="mai" class="section" aria-labelledby="materi-title">
+      <div class="container">
+        <h2 id="materi-title">Empat kategori yang kamu pelajari</h2>
+        <p class="section-lead">
+          Materi dasar disusun dari empat kategori yang paling sering muncul di
+          kompetisi CTF tingkat pemula.
+        </p>
+
+        <div class="filter-bar">
+          <label for="filter-tingkat">Filter tingkat</label>
+          <select id="filter-tingkat">
+            <option value="semua">Semua</option>
+            <option value="Dasar">Dasar</option>
+            <option value="Lanjutan">Lanjutan</option>
+          </select>
+        </div>
+        <p id="status-filter" role="status" aria-live="polite"></p>
+
+        <div id="daftar-materi" class="feature-list" aria-label="Daftar kategori materi"></div>
+      </div>
+    </section>
+
+    <section id="jadwal" class="section section--alt" aria-labelledby="jadwal-title">
+      <div class="container split">
+        <div class="split-text">
+          <h2 id="jadwal-title">Format dan jadwal</h2>
+          <ul class="steps">
+            <li>6 minggu, satu kategori per minggu plus satu minggu latihan gabungan.</li>
+            <li>Sesi luring 90 menit setiap Sabtu di Laboratorium Komputer 2.</li>
+            <li>Setiap peserta dipasangkan dengan mentor dari batch sebelumnya.</li>
+            <li>Ditutup dengan mini-CTF internal sebagai latihan kompetisi sungguhan.</li>
+          </ul>
+        </div>
+        <img class="split-media" src="assets/sesi-latihan.jpg"
+             alt="Sekelompok mahasiswa berdiskusi di depan laptop saat sesi latihan CTF"
+             width="900" height="600">
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Pertanyaan yang sering diajukan</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-pertanyaan" aria-expanded="false">
+                Apakah saya perlu pengalaman coding sebelumnya?
+              </button>
+            </h3>
+            <div class="faq-jawaban">
+              <p>Tidak wajib. Web Exploitation dan Cryptography dirancang untuk pemula, sedangkan Forensics dan Reverse Engineering mengasumsikan dasar dari dua kategori sebelumnya.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-pertanyaan" aria-expanded="false">
+                Apakah CTF101 gratis?
+              </button>
+            </h3>
+            <div class="faq-jawaban">
+              <p>Ya, seluruh sesi CTF101 diselenggarakan gratis untuk mahasiswa D3 Teknik Informatika.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-pertanyaan" aria-expanded="false">
+                Bagaimana jika saya tidak bisa hadir di salah satu sesi Sabtu?
+              </button>
+            </h3>
+            <div class="faq-jawaban">
+              <p>Materi dan rangkuman singkat setiap sesi dibagikan lewat mentor kelompok, jadi kamu tetap bisa mengikuti sesi berikutnya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="daftar" class="section section--alt cta" aria-labelledby="daftar-title">
+      <div class="container">
+        <h2 id="daftar-title">Siap mulai?</h2>
+        <p>
+          Tidak perlu pengalaman sebelumnya, modal utamanya rasa penasaran dan
+          mau nyoba berkali-kali sampai flag-nya ketemu.
+        </p>
+
+        <form id="form-daftar" class="form-daftar" novalidate>
+          <label for="nama-daftar">Nama</label>
+          <input id="nama-daftar" name="nama" autocomplete="name"
+                 aria-describedby="error-nama-daftar" required>
+          <small id="error-nama-daftar" class="error"></small>
+
+          <label for="email-daftar">Email</label>
+          <input id="email-daftar" name="email" type="email" autocomplete="email"
+                 aria-describedby="error-email-daftar" required>
+          <small id="error-email-daftar" class="error"></small>
+
+          <label for="motivasi-daftar">Kenapa ingin ikut CTF101?</label>
+          <textarea id="motivasi-daftar" name="motivasi" rows="3"
+                    aria-describedby="error-motivasi-daftar" required></textarea>
+          <small id="error-motivasi-daftar" class="error"></small>
+
+          <button type="submit" class="button button--primary">Daftar sekarang</button>
+          <p id="status-daftar" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p> Komunitas Mahasiswa D3 Teknik Informatika</p>
+    </div>
+  </footer>
+
+  <button id="tombol-ke-atas" type="button" class="tombol-ke-atas" hidden>Ke atas</button>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

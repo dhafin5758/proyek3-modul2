@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.faq-pertanyaan {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.faq-jawaban {
+  display: none;
+  padding: 12px;
+}
+
+.faq-jawaban.terbuka {
+  display: block;
+}
